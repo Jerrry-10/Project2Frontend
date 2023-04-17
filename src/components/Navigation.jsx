@@ -1,6 +1,10 @@
 import React from "react";
+import getPosts from "../hook/hook";
 
 const Navigation = () => {
+  return (
+    <div className="Nav text-teal-300">
+      <p className="text-green-300">hello world</p>
 
     return (
         <div className="navBar flex justify-between items-center p-[3rem] bg-[#2c125c]">
