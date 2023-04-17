@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const getPosts = (id) => {
+const usePosts = (id) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [postData, setPostData] = useState([]);
 
-  const getBookData = async (id) => {
+  const getPostData = async (id) => {
     let url = `http://localhost:3001/v1/api/posts`;
     if (id) {
       url += `/${id}`;
@@ -14,19 +14,22 @@ const getPosts = (id) => {
     try {
       setLoading(true);
       const response = await axios(url);
-      const data = await response.json();
-      setPostData(data);
+      setPostData(response.data);
       setLoading(false);
     } catch (error) {
       setError(error);
+      setLoading(false);
     }
   };
 
   useEffect(() => {
-    getPosts(id);
+    getPostData(id);
+    return () => {
+      setPostData([]);
+    };
   }, [id]);
 
-  return [loading, error, bookData];
+  return [loading, error, postData];
 };
 
-export default getPosts;
+export default usePosts;
