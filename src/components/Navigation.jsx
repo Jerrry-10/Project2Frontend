@@ -1,28 +1,24 @@
 import React from "react";
-import getPosts from "../hook/hook";
 
 const Navigation = () => {
-  return (
-    <div className="Nav text-teal-300">
-      <p className="text-green-300">hello world</p>
 
     return (
         <div className="navBar flex justify-between items-center p-[3rem] bg-[#2c125c]">
             <div className="logoDiv">
-                <h1 className="logo text-[25px] text-yellow-200">
+                <h1 className="logo text-[25px] text-neutral-100">
                     <strong>Awesome</strong>Blog
                 </h1>
             </div>
 
             <div className="mexu flex gap-8">
-                <li className="text-yellow-200 hover:text-violet-700">Home</li>
-                <li className="text-yellow-200 hover:text-violet-700">Blog</li>
-                <li className="text-yellow-200 hover:text-violet-700">Contact Us</li>
-                <li className="text-yellow-200 hover:text-violet-700">Login</li>
+                <li className="text-neutral-100 hover:text-violet-700">Home</li>
+                <li className="text-neutral-100 hover:text-violet-700">Blog</li>
+                <li className="text-neutral-100 hover:text-violet-700">Contact Us</li>
+                <li className="text-neutral-100 hover:text-violet-700">Login</li>
             </div>
             
         </div>
     )
 }
 
-export default Navigation;
+export default Navigation
