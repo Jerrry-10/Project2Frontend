@@ -3,8 +3,8 @@ import React from "react";
 const Navigation = () => {
 
     return (
-        <div>
-            <h1>hello world</h1>
+        <div className="Nav text-teal-300">
+            <p className="text-green-300">hello world</p>
         </div>
     )
 }
