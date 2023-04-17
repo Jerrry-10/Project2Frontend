@@ -1,15 +1,15 @@
-import React from 'react'
-import Navigation from './components/Navigation'
-
+import React from "react";
+import Navigation from "./components/Navigation";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
-
   return (
-    <div className="App">
-
-      <Navigation />
-        
-    </div>
-  )
+    <BrowserRouter>
+      <div className="App">
+        <Navigation />
+        <Routes>{/* <Route path="/" element={} /> */}</Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
