@@ -13,7 +13,7 @@ const Blog = () => {
       {!error && !loading && data && (
         <>
           {data.map((post) => (
-            <div className="justify-center" key={post.id}>
+            <div key={post.id}>
               <h2>{post.title}</h2>
               <p>{post.content}</p>
             </div>

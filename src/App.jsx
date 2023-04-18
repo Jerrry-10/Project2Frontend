@@ -12,11 +12,6 @@ function App() {
         <Home />
         
 
-
-
-
-
-        <Routes>{/* <Route path="/" element={} /> */}</Routes>
       </div>
     </BrowserRouter>
   );
