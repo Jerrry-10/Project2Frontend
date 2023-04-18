@@ -12,12 +12,12 @@ const Navigation = () => {
 
             <div className="mexu flex gap-8">
                 <li className="text-neutral-100 hover:text-violet-700">Home</li>
-                <li className="text-neutral-100 hover:text-violet-700">Blog</li>
-                <li className="text-neutral-100 hover:text-violet-700">Contact Us</li>
-                <li className="text-neutral-100 hover:text-violet-700">Login</li>
+                <li className="text-neutral-100 hover:text-violet-700">About</li>
+                <li className="text-neutral-100 hover:text-violet-700">Contact</li>
+                <li className="text-neutral-100 hover:text-violet-700">Write</li>
             </div>
             
-        </div>
+        </div>  
     )
 }
 
