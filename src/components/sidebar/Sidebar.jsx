@@ -1,4 +1,4 @@
-import sidebar_image1 from '../../assets/sidebar_image1.jpeg'
+import sidebar_image from '../../assets/sidebar_image.jpeg'
 
 const Sidebar = () => {
 
@@ -9,7 +9,7 @@ const Sidebar = () => {
                  border-b-[1px] border-[#a7a4a4] font-serif text-[12px] text-[#222] font-semibold leading-[20px] text-center'>ABOUT ME</span>
                 <img
                     className='mt-[15px]'
-                    src={sidebar_image1}
+                    src={sidebar_image}
                     alt="" 
                 />
                 <p className='p-[30px]'>
@@ -35,5 +35,3 @@ const Sidebar = () => {
 }
 
 export default Sidebar
-
-//
