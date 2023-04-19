@@ -24,9 +24,6 @@ const usePosts = (id) => {
 
   useEffect(() => {
     getPostData(id);
-    return () => {
-      setPostData([]);
-    };
   }, [id]);
 
   return [loading, error, postData];

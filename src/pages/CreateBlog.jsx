@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import useCreatePost from "../hook/posthook"; // Import the useCreatePost hook
+import useCreatePost from "../hook/posthook";
 
 const BlogCreate = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const { postData } = useCreatePost(); // Use the custom hook
+  const { postData } = useCreatePost();
 
   const handlePostSubmit = async () => {
     try {
-      await postData(title, content); // Call postData function from the hook
+      await postData(title, content);
       alert("Post created successfully!");
     } catch (error) {
       console.error("Error creating post:", error);

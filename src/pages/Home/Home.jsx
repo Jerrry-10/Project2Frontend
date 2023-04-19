@@ -1,18 +1,19 @@
-import Header from "../../components/header/Header"
-import Posts from "../../components/posts/Posts"
-import Sidebar from "../../components/sidebar/Sidebar"
+import Header from "../../components/header/Header";
+import Blog from "../blogs";
+import Post from "../post";
+import Sidebar from "../../components/sidebar/Sidebar";
 
 const Home = () => {
+  return (
+    <>
+      <Header />
+      <div className="home flex">
+        <Blog />
 
-    return (
-        <>
-            <Header />
-            <div className="home flex">
-                <Posts />
-                <Sidebar />
-            </div>
-        </>
-    )
-}
+        <Sidebar />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;

@@ -1,9 +1,9 @@
-// Blog.js
 import React, { useState, useEffect } from "react";
-import getPosts from "../hook/hook";
+import usePosts from "../hook/hook";
+
 const Blog = () => {
   // const [posts, setPosts] = useState([]);
-  const [loading, error, data] = getPosts();
+  const [loading, error, data] = usePosts();
 
   return (
     <div className="blog">
@@ -13,7 +13,7 @@ const Blog = () => {
       {!error && !loading && data && (
         <>
           {data.map((post) => (
-            <div key={post.id}>
+            <div className="" key={post.id}>
               <h2>{post.title}</h2>
               <p>{post.content}</p>
             </div>
