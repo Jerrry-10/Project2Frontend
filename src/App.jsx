@@ -20,6 +20,7 @@ function App() {
           <Route exact path="/contact" element={<Contact />}></Route>
 
 
+
         </Routes>
       </div>
     </BrowserRouter>
