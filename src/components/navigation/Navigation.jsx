@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
 
@@ -11,10 +12,10 @@ const Navigation = () => {
             </div>
 
             <div className="mexu flex gap-8">
-                <li className="text-neutral-100 hover:text-violet-700">Home</li>
-                <li className="text-neutral-100 hover:text-violet-700">About</li>
-                <li className="text-neutral-100 hover:text-violet-700">Contact</li>
-                <li className="text-neutral-100 hover:text-violet-700">Write</li>
+                <li className="text-neutral-100 hover:text-violet-700"><Link to  = "/">Home</Link></li>
+                <li className="text-neutral-100 hover:text-violet-700"><Link to = "/about">About</Link></li>
+                <li className="text-neutral-100 hover:text-violet-700"><Link to = "/contact">Contact</Link></li>
+                <li className="text-neutral-100 hover:text-violet-700"><Link to = "/create">Create</Link></li>
             </div>
             
         </div>  
