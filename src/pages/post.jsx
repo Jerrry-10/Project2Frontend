@@ -6,7 +6,7 @@ const Post = () => {
   const [loading, error, data] = usePosts(params.id);
   return (
     <div>
-      <h1>test</h1>
+      <h1>Post:</h1>
       {loading && <p>loading</p>}
       {error && "error"}
       {!loading && !error && data && <PostInfo post={data} />}
