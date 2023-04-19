@@ -20,7 +20,7 @@ const Sidebar = () => {
             <div className="sidebarItem flex flex-col items-center">
                 <span className="sidebarTitle  m-[10px] p-[5px] w-[80%] border-t-[1px]
                  border-b-[1px] border-[#a7a4a4] font-serif text-[12px] text-[#222] font-semibold leading-[20px] text-center">CATEGORIES</span>
-                <ul className="sidebarList list-none mb-[30px]">
+                <ul className="sidebarList list-none mb-[30px] list-disc">
                     <li sidebarListItem className='line-block w-1/2 mt-[15px] cursor-pointer'>Life</li>
                     <li sidebarListItem className='line-block w-1/2 mt-[15px] cursor-pointer'>Music</li>
                     <li sidebarListItem className='line-block w-1/2 mt-[15px] cursor-pointer'>Style</li>

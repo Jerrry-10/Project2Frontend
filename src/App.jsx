@@ -5,6 +5,8 @@ import Home from "./pages/Home/Home";
 import BlogCreate from "./pages/CreateBlog";
 import Post from "./pages/post";
 import EditPost from "./components/editPost";
+import Contact from "./pages/contact"
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,9 @@ function App() {
           <Route exact path="/blog/:id" element={<Post />}></Route>
           <Route exact path="/blog/:id/edit" element={<EditPost />}></Route>
           <Route exact path="/create" element={<BlogCreate />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+
+
         </Routes>
       </div>
     </BrowserRouter>
