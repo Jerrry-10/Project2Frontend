@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import usePosts from "../hook/hook";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   // const [posts, setPosts] = useState([]);
@@ -14,7 +15,9 @@ const Blog = () => {
         <>
           {data.map((post) => (
             <div className="" key={post.id}>
-              <h2>{post.title}</h2>
+              <Link to={`blog/${post.id}`}>
+                <h2>{post.title}</h2>
+              </Link>
               <p>{post.content}</p>
             </div>
           ))}
