@@ -57,7 +57,7 @@ const Contact = () => {
                     <option value="condo">Lorem ipsum dolor sit.</option>
                     <option value="land">Lorem, ipsum dolor.</option>
                     </select>
-
+                    
 
                     
                     
