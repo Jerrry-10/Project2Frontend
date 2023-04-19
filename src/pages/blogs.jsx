@@ -7,8 +7,8 @@ const Blog = () => {
   const [loading, error, data] = usePosts();
 
   return (
-    <div className="blog">
-      <h1>My Blog</h1>
+    <div className="blog flex-[2]">
+      <h1 className="font-semibold mx-auto">My Blog</h1>
       {error && "Error"}
       {!error && loading && "Loading"}
       {!error && !loading && data && (

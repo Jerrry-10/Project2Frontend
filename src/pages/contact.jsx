@@ -1,7 +1,7 @@
 const Contact = () => {
 
     return (
-        <div className="h-[1000px]">
+        <div className="h-[1100px]">
             <h1 className="text-center text-violet-700 font-semibold text-[20px] mt-[20px]">CONTACT</h1>
             <div class="border-b border-gray-400 w-[1000px] mx-auto w-1/2 mt-[20px]"></div>
 
@@ -59,6 +59,10 @@ const Contact = () => {
                     </select>
 
                     
+                    <button className="bg-violet-500 hover:bg-blue-400 text-white font-bold py-2 px-4 
+                        border-b-4 border-violet-700 hover:border-blue-500 rounded mt-[50px]">
+                        Submit
+                    </button>
                     
 
                 </div>
