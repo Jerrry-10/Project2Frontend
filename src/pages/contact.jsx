@@ -33,20 +33,20 @@ const Contact = () => {
 
                 <div>
 
-                    <label class="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">First Name</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+                    <label className="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">First Name</label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
                     focus:outline-none focus:shadow-outline" id="first_name" type="text" placeholder="Enter your first name"></input>
                     
-                    <label class="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">Last Name</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+                    <label className="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">Last Name</label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
                     focus:outline-none focus:shadow-outline" id="first_name" type="text" placeholder="Enter your last name"></input>
                     
-                    <label class="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">Email Address</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+                    <label className="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">Email Address</label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
                     focus:outline-none focus:shadow-outline" id="first_name" type="text" placeholder="Enter your email address"></input>
                     
-                    <label class="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">Phone Number</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
+                    <label className="mt-[30px] block text-violet-700 font-bold mb-2" for="first_name">Phone Number</label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
                     focus:outline-none focus:shadow-outline" id="first_name" type="text" placeholder="Enter your Phone Number"></input>
 
                     <label for="property" className=" mt-[30px] block text-violet-700 font-bold mb-2">What is the issue you are dealing with?</label>
