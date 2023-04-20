@@ -1,5 +1,9 @@
 const Contact = () => {
 
+    const handleClick = () => {
+        alert("Success!")
+    }
+    
     return (
         <div className="h-[1100px]">
             <h1 className="text-center text-violet-700 font-semibold text-[20px] mt-[20px]">CONTACT</h1>
@@ -51,16 +55,16 @@ const Contact = () => {
 
                     <label className=" mt-[30px] block text-violet-700 font-bold mb-2">What is the issue you are dealing with?</label>
                     <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                    <option value="">Select an issue</option>
-                    <option value="house">Lorem, ipsum dolor.</option>
-                    <option value="apartment">Lorem, ipsum.</option>
-                    <option value="condo">Lorem ipsum dolor sit.</option>
-                    <option value="land">Lorem, ipsum dolor.</option>
+                        <option>Select an issue</option>
+                        <option>Lorem, ipsum dolor.</option>
+                        <option>Lorem, ipsum.</option>
+                        <option>Lorem ipsum dolor sit.</option>
+                        <option>Lorem, ipsum dolor.</option>
                     </select>
 
                     
                     <button className="bg-violet-500 hover:bg-blue-400 text-white font-bold py-2 px-4 
-                        border-b-4 border-violet-700 hover:border-blue-500 rounded mt-[50px]">
+                        border-b-4 border-violet-700 hover:border-blue-500 rounded mt-[50px]" onClick={handleClick}>
                         Submit
                     </button>
                     
