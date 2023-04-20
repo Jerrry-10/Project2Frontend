@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import useCreatePost from "../hook/posthook";
+import { useNavigate } from "react-router";
 
 const BlogCreate = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const navigate = useNavigate();
 
   const { postData } = useCreatePost();
 
@@ -11,6 +13,7 @@ const BlogCreate = () => {
     try {
       await postData(title, content);
       alert("Post created successfully!");
+      navigate("/");
     } catch (error) {
       console.error("Error creating post:", error);
       alert("Failed to create post.");
