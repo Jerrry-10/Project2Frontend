@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import updatePost from "../hook/patchhook";
 import usePosts from "../hook/hook";
+import { useNavigate } from "react-router-dom";
 
 function EditPost() {
   const { id } = useParams();
-
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const {
@@ -26,6 +27,7 @@ function EditPost() {
     try {
       await updateData(title, content);
       alert("Success!");
+      navigate(`/blog/${id}`);
     } catch (err) {
       console.error(err);
     }
@@ -41,7 +43,9 @@ function EditPost() {
 
   return (
     <div className="bg-white border border-black-900 rounded-lg p-[30px] m-[20px] text-center">
-      <h1 className="mb-[50px]"><strong className="text-violet-700 text-[30px]">Edit Post</strong></h1>
+      <h1 className="mb-[50px]">
+        <strong className="text-violet-700 text-[30px]">Edit Post</strong>
+      </h1>
 
       <div className="flex justify-center flex-wrap items-center flex mb-[30px]">
         <span class="text-gray-500 mr-[10px]">Edit Title</span>
@@ -67,11 +71,12 @@ function EditPost() {
       </div>
 
       <div className="flex justify-center flex-wrap items-center flex mt-[30px]">
-        <button 
+        <button
           className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-[6px] px-[20px]
           border-b-4 border-violet-700 hover:border-violet-500 rounded mt-[20px]"
-          onClick={handleUpdate} 
-          disabled={updateLoading}>
+          onClick={handleUpdate}
+          disabled={updateLoading}
+        >
           Update Post
         </button>
       </div>
