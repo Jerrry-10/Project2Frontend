@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className="navBar flex justify-between items-center p-[3rem] bg-[#2c125c]">
             <div className="logoDiv">
                 <h1 className="logo text-[25px] text-neutral-100">
-                    <strong>Awesome</strong>Blog
+                    <Link to = "/"><strong>Awesome</strong>Blog</Link>
                 </h1>
             </div>
 
