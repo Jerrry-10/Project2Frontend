@@ -8,17 +8,17 @@ const Blog = () => {
 
   return (
     <div className="blog flex-[2]">
-      <h1 className="font-semibold mx-auto">My Blog</h1>
+      <h1 className="font-semibold mx-auto text-[50px] text-center text-violet-700 mt-[30px]">My Blog</h1>
       {error && "Error"}
       {!error && loading && "Loading"}
       {!error && !loading && data && (
         <>
           {data.map((post) => (
-            <div className="" key={post.id}>
+            <div className="bg-white border border-black-900 rounded-lg p-[30px] m-[50px] text-center" key={post.id}>
               <Link to={`blog/${post.id}`}>
-                <h2>{post.title}</h2>
+                <h2><strong className="text-violet-700">Title:</strong> {post.title}</h2>
               </Link>
-              <p>{post.content}</p>
+              <p><strong className="text-violet-700">Content:</strong> {post.content}</p>
             </div>
           ))}
         </>

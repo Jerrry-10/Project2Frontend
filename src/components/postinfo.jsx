@@ -19,11 +19,21 @@ function PostInfo({ post }) {
 
   return (
     <div>
-      <div>
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
-        <Link to={`/blog/${post.id}/edit`}>Edit Post</Link>{" "}
-        <button onClick={handleDelete}>Delete Post</button>{" "}
+      <div className="bg-white border border-black-900 rounded-lg p-[30px] m-[20px] text-center">
+
+        <h1 className="mt-[5px]"><strong className="text-violet-700">Title:</strong> {post.title}</h1>
+        <p className="mt-[5px]"><strong className="text-violet-700">Content:</strong> {post.content}</p>
+
+        <Link to={`/blog/${post.id}/edit`} className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-2 px-4 
+        border-b-4 border-violet-700 hover:border-violet-500 rounded mt-[50px]">Edit Post</Link>{" "}
+        
+        <button 
+          className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-1.5 px-4
+          border-b-4 border-violet-700 hover:border-violet-500 rounded mt-[20px]" 
+          onClick={handleDelete}>
+            Delete Post
+        </button>{" "}
+
         {deleteError && <p>Error: {deleteError}</p>}
       </div>
     </div>

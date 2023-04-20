@@ -40,8 +40,8 @@ function EditPost() {
   }
 
   return (
-    <div>
-      <h1>Edit Post</h1>
+    <div className="bg-white border border-black-900 rounded-lg p-[30px] m-[20px] text-center">
+      <h1><strong>Edit Post</strong></h1>
       <div>
         <input
           type="text"

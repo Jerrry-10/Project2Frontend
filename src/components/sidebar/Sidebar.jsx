@@ -4,7 +4,7 @@ const Sidebar = () => {
 
     return (
 
-        <div className='sidebar flex-[1] flex justify-end flex-row items-center'>
+        <div className='sidebar flex-[1] mr-[80px] flex justify-end flex-row items-center'>
             <div className='sidebarItem w-1/2 flex flex-col items-center'>
                 <span className='sidebarTitle m-[10px] p-[5px] w-[80%] border-t-[1px]
                  border-b-[1px] border-[#a7a4a4] font-serif text-[12px] text-[#222] font-semibold leading-[20px] text-center'>ABOUT ME</span>
@@ -19,7 +19,7 @@ const Sidebar = () => {
                 </p>
             </div>
             <div className="sidebarItem flex flex-col items-center">
-                <span className="sidebarTitle  m-[10px] p-[5px] w-[80%] border-t-[1px]
+                <span className="sidebarTitle m-[10px] p-[5px] w-[80%] border-t-[1px]
                  border-b-[1px] border-[#a7a4a4] font-serif text-[12px] text-[#222] font-semibold leading-[20px] text-center">CATEGORIES</span>
                 <ul className="sidebarList list-none mb-[30px] list-disc ">
                     <li sidebarListItem className='line-block w-1/2 mt-[15px] cursor-pointer'>Life</li>
