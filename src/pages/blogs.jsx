@@ -16,7 +16,7 @@ const Blog = () => {
           {data.map((post) => (
             <div className="bg-white border border-black-900 rounded-lg p-[30px] m-[50px] text-center" key={post.id}>
               <Link to={`blog/${post.id}`}>
-                <h2><strong className="text-violet-700">Title:</strong> {post.title}</h2>
+                <h2><strong className="text-violet-700 hover:text-red-400">Title:</strong> {post.title}</h2>
               </Link>
               <p><strong className="text-violet-700">Content:</strong> {post.content}</p>
             </div>
