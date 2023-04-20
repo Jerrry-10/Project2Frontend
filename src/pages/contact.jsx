@@ -3,7 +3,7 @@ const Contact = () => {
     return (
         <div className="h-[1100px]">
             <h1 className="text-center text-violet-700 font-semibold text-[20px] mt-[20px]">CONTACT</h1>
-            <div class="border-b border-gray-400 w-[1000px] mx-auto w-1/2 mt-[20px]"></div>
+            <div className="border-b border-gray-400 w-[1000px] mx-auto w-1/2 mt-[20px]"></div>
 
             <p className="mt-[20px] mx-auto w-1/2">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero repudiandae officia nulla quis 
@@ -49,8 +49,8 @@ const Contact = () => {
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight 
                     focus:outline-none focus:shadow-outline" id="first_name" type="text" placeholder="Enter your Phone Number"></input>
 
-                    <label for="property" className=" mt-[30px] block text-violet-700 font-bold mb-2">What is the issue you are dealing with?</label>
-                    <select name="property" id="property" className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <label className=" mt-[30px] block text-violet-700 font-bold mb-2">What is the issue you are dealing with?</label>
+                    <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                     <option value="">Select an issue</option>
                     <option value="house">Lorem, ipsum dolor.</option>
                     <option value="apartment">Lorem, ipsum.</option>
