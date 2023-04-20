@@ -41,8 +41,8 @@ const BlogCreate = () => {
         ></textarea>
         <br />
         <button
-          className="bg-violet-500 hover:bg-blue-400 text-white font-bold py-2 px-4 
-          border-b-4 border-violet-700 hover:border-blue-500 rounded"
+          className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-2 px-4 
+          border-b-4 border-violet-700 hover:border-violet-500 rounded"
           onClick={handlePostSubmit}
         >
           Create Post
