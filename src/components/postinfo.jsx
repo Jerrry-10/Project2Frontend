@@ -24,11 +24,11 @@ function PostInfo({ post }) {
         <h1 className="mt-[5px]"><strong className="text-violet-700">Title:</strong> {post.title}</h1>
         <p className="mt-[5px]"><strong className="text-violet-700">Content:</strong> {post.content}</p>
 
-        <Link to={`/blog/${post.id}/edit`} className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-2 px-4 
+        <Link to={`/blog/${post.id}/edit`} className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-[8.5px] px-[20px] 
         border-b-4 border-violet-700 hover:border-violet-500 rounded mt-[50px]">Edit Post</Link>{" "}
         
         <button 
-          className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-1.5 px-4
+          className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-[6px] px-[20px]
           border-b-4 border-violet-700 hover:border-violet-500 rounded mt-[20px]" 
           onClick={handleDelete}>
             Delete Post
