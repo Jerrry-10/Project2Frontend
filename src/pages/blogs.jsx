@@ -19,6 +19,12 @@ const Blog = () => {
                 <h2><strong className="text-violet-700 hover:text-red-400">Title:</strong> {post.title}</h2>
               </Link>
               <p><strong className="text-violet-700">Content:</strong> {post.content}</p>
+              <Link to={`blog/${post.id}`}>
+              
+                <button className="bg-violet-500 hover:bg-violet-400 text-white font-bold py-1 px-4
+                  border-b-4 border-violet-700 hover:border-violet-500 rounded mt-[15px]">More Options</button>
+                
+              </Link>
             </div>
           ))}
         </>
