@@ -2,17 +2,17 @@ import { expect } from "vitest";
 import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import CreatePost from "src/pages/CreateBlog.jsx";
+import Contact from "../pages/contact";
 import { BrowserRouter as Router } from "react-router-dom";
 
-describe("create blog", async () => {
-  it("should render the create blog page", async () => {
+describe("render contact", async () => {
+  it("render the contact page", async () => {
     const { getByText } = render(
       <Router>
-        <CreatePost />
+        <Contact />
       </Router>
     );
-    const button = getByText("Create Post");
-    expect(button).toBeInTheDocument();
+    const header = getByText("CONTACT");
+    expect(header).toBeInTheDocument();
   });
 });
